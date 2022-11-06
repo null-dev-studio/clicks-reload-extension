@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(162, 235, 253);
+            width: 300px;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+        }
+        .title-text{
+            margin: 10px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        #timer{
+            width: 150px;
+            height: 15px;
+        }
+        span{
+            margin: 10px;
+            margin-top: 2px;
+        }
+        .timer{
+            margin-left: 43px;
+        }
+        .inputs-block{
+            display: flex;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+
+        }
+        #btn{
+            padding: 5px 5px;
+            margin: 0 0 12px;
+            border-radius: 10px;
+            background: #fff;
+            border: 2px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+    <body>
+        <main class="extensions">
+            <div class="title">
+                <h4 class="title-text">clicks reload</h4>
+            </div>
+            <div class="inputs">
+                <div class="inputs-block">
+                    <span class="timer">таймер</span><input type="text" size="40" id="timer">
+                </div>
+            </div>
+            <div class="button">
+                <button id="btn">старт</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

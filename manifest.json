@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "clicks",
+    "version": "1",
+	"browser_action": {
+		"default_title": "clicks",
+		"default_popup": "index.html"
+	},
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "notifications",
+        "background",
+        "http://*/",
+        "https://*/"
+    ]
+}
